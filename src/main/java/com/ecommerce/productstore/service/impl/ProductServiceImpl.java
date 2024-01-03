@@ -7,6 +7,7 @@ import lombok.extern.log4j.Log4j2;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Optional;
 
 @Log4j2
 @Service
@@ -29,12 +30,13 @@ public class ProductServiceImpl implements ProductService {
     }
 
     @Override
-    public void delete(Long productId) {
+    public void deleteById(Long productId) {
+        productRepository.deleteById(productId);
 
     }
 
     @Override
-    public ProductModel updateProduct(Long productId, ProductModel product) {
-        return null;
+    public Optional<ProductModel> getProductById(Long id) {
+        return productRepository.findById(id);
     }
 }

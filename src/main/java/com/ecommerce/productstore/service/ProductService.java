@@ -4,6 +4,7 @@ package com.ecommerce.productstore.service;
 import com.ecommerce.productstore.model.ProductModel;
 
 import java.util.List;
+import java.util.Optional;
 
 public interface ProductService {
 
@@ -11,9 +12,8 @@ public interface ProductService {
 
     ProductModel save(ProductModel product);
 
-    void delete(Long productId);
+    void deleteById(Long productId);
 
-    ProductModel updateProduct(Long productId, ProductModel product);
-
+    Optional<ProductModel> getProductById(Long id);
 
 }
