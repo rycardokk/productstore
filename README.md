@@ -5,7 +5,7 @@ Este é um projeto básico de CRUD (Create, Read, Update, Delete) para gerenciar
 Requisitos
 Certifique-se de ter o seguinte instalado em sua máquina:
 
-Java 8 ou superior
+Java 11 ou superior
 Maven
 
 # Configuração do Ambiente de Desenvolvimento
