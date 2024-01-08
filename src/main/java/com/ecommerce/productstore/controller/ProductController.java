@@ -78,4 +78,8 @@ public class ProductController {
         return "redirect:/available_products";
     }
 
+    @ExceptionHandler(IllegalArgumentException.class)
+    public String onError(){return "redirect:/available_products";
+}
+
 }
