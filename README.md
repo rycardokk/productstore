@@ -13,7 +13,7 @@ Maven
 git clone https://github.com/rycardokk/productstore.git
 
 Estrutura do Projeto
-src/main/java/com/seuusuario/nomedoprojeto: Contém os arquivos Java, incluindo controladores, entidades e a classe principal do Spring Boot.
+src/main/java/com/ecommerce/productstore: Contém os arquivos Java, incluindo controladores, entidades e a classe principal do Spring Boot.
 
 src/main/resources/templates/product: Contém os arquivos Thymeleaf para as páginas HTML relacionadas aos produtos.
 
